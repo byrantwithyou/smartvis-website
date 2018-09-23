@@ -5,23 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-
     <title>
-      
         SmartVIS 
-      
     </title>
-
-    
       <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600" rel="stylesheet" type="text/css">
       <link href="assets/css/toolkit-startup.css" rel="stylesheet">
       <link href="assets/css/application-startup.css" rel="stylesheet">
-    
-
-    
-
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
       /* this chunk of css is not part of the toolkit :) */
@@ -44,9 +33,6 @@
 
 
 <body>
-  
-
-
 
 <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
   <ul class="nav nav-bordered nav-stacked flex-column">
@@ -64,16 +50,17 @@
 
 <div class="stage" id="stage">
 
-<div class="block block-inverse block-fill-height app-header"
-     style="background-image: url(assets/img/1-1.jpg);">
-
+<div class="block block-inverse app-header"
+     style="background-image: url(assets/img/2-1.jpg); display: table">
   <div class="container py-4 fixed-top app-navbar">
+
   <nav class="navbar navbar-transparent navbar-padded navbar-expand-md">
+
     <a class="navbar-brand mr-auto" href="">
-      <strong style="padding: 12px;">go</strong>
+      <strong style="padding: 12px; visibility: hidden;">go</strong>
     </a>
     <button
-      class="navbar-toggler"
+      class="navbar-toggler bg-warning"
       type="button"
       data-target="#stage"
       data-toggle="stage"
@@ -84,24 +71,25 @@
     <div class="d-none d-md-block">
       <ul class="navbar-nav">
         <li class="nav-item px-1 ">
-          <a class="nav-link text-dark lead" href="index.html"><strong>Product</strong></a>
+          <a class="nav-link text-dark lead" href="index.html">Product</a>
         </li>
         <li class="nav-item px-1 ">
           <a class="nav-link lead text-warning" href="introduction.html"><strong>Introduction</strong></a>
         </li>
         <li class="nav-item px-1 ">
-          <a class="nav-link lead text-dark" href="https://idvxlab.github.io/"><strong>Our lab</strong></a>
+          <a class="nav-link lead text-dark" href="https://idvxlab.github.io/">Our lab</a>
         </li>
       </ul>
     </div>
   </nav>
+
 </div>
 
   <div class="block-xs-middle pb-5">
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-lg-6">
-          <h1 class="block-titleData frequency text-dark">SmartVIS</h1>
+          <h1 class="block-titleData frequency text-dark">Smart<span class="text-warning">VIS</span></h1>
           <p class="mb-4 text-dark">Let's take you into the world of smartvis.</p>
         </div>
       </div>
@@ -146,9 +134,11 @@
             </div>
             <div class="col-md-3 col-xs-3 col-sm-3">
                 <img class="img-fluid" src="assets/img/2-3-1.png">
-            </div>
+                <div style="height:30px;"></div>
+              </div>
             <div class="col-md-3 col-xs-3 col-sm-3">
-                <img class="img-fluid" src="assets/img/2-3-2.png">
+              <img class="img-fluid" src="assets/img/2-3-2.png">
+                <div style="height:30px"></div>
             </div>
         </div>
     </div>
@@ -162,46 +152,88 @@
                 <small class="text-muted">导入csv数据文件-上传数据-选择合适的模板-拖入层级关系-生成图片-保存数据到云端</small>  
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 px-4 mb-5">
-                <div id="carousel-example-generic-2" class="carousel carousel-light slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="https://placehold.it/1140x500/fff/333" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="https://placehold.it/1140x500/fff/333" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="https://placehold.it/1140x500/fff/333" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel-example-generic-2" role="button" data-slide="prev">
-                        <span class="icon icon-chevron-thin-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-example-generic-2" role="button" data-slide="next">
-                        <span class="icon icon-chevron-thin-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <h1 class="text-warning">Start your journey with colorful SmartVIS.</h1>
     </div>
 </div>
 
 
-<div class="block text-center">
-    <small>From iDV<sup>x</sup> lab</small>
-    <br>
-    <small><a href="https://idvxlab.github.io">https://idvxlab.github.io</a></small>
-</div>
+<div class="container mb-5">
+<div class="row">
+<div class="col-md-12 col-sm-12">
+  <div id="carousel-example-generic-2" class="carousel carousel-light slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic-2" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic-2" data-slide-to="4"></li>
+      <li data-target="#carousel-example-generic-2" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <img class="d-block img-fluid" src="assets/img/c1.png" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="assets/img/c2.png" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="assets/img/c3.png" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="assets/img/c4.png" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="assets/img/c5.png" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="assets/img/c6.png" alt="Second slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel-example-generic-2" role="button" data-slide="prev">
+      <span class="icon icon-chevron-thin-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-generic-2" role="button" data-slide="next">
+      <span class="icon icon-chevron-thin-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+<div class="block block-inverse app-footer">
+    <div class="container">
+       <div class="row">
+         <div class="col-md-5 mb-5">
+           <ul class="list-unstyled list-spaced">
+             <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
+             <li class="text-muted">
+                Contact us anytime at <a href="mailto: idvx.lab@tongji.edu.cn">idvx.lab@tongji.edu.cn</a>.
+             </li>
+           </ul>
+         </div>
+         <div class="col-md-2 ml-auto mb-5">
+           <ul class="list-unstyled list-spaced">
+             <li class="mb-2"><h6 class="text-uppercase">Product</h6></li>
+             <li class="text-muted">Features</li>
+             <li class="text-muted">Examples</li>
+             <li class="text-muted">Tour</li>
+             <li class="text-muted">Gallery</li>
+           </ul>
+         </div>
+         <div class="col-md-2 mb-5">
+           <ul class="list-unstyled list-spaced">
+             <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
+             <li class="text-muted">Terms</li>
+             <li class="text-muted">Legal</li>
+             <li class="text-muted">Privacy</li>
+             <li class="text-muted">License</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
 </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -210,9 +242,6 @@
     <script>
       // execute/clear BS loaders for docs
       $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
-      document.querySelector("#intro").addEventListener("click", function () {
-        window.location.href = "introduction.html";
-      })
     </script>
 </body>
 </html>

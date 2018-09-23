@@ -4,24 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-
     <title>
-      
         SmartVIS 
-      
     </title>
-
-    
       <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600" rel="stylesheet" type="text/css">
       <link href="assets/css/toolkit-startup.css" rel="stylesheet">
       <link href="assets/css/application-startup.css" rel="stylesheet">
-    
-
-    
-
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
       /* this chunk of css is not part of the toolkit :) */
@@ -41,23 +29,17 @@
       }
     </style>
   </head>
-
-
 <body>
-  
-
-
-
 <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
   <ul class="nav nav-bordered nav-stacked flex-column">
     <li class="nav-item">
-      <a class="nav-link active text-warning" href="index.html">Product</a>
+      <a class="nav-link active text-warning" href="index.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="introduction.html">Introduction</a>
+      <a class="nav-link" href="introduction.html">Getting Started</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="https://idvxlab.github.io/">Our lab</a>
+      <a class="nav-link" href="https://idvxlab.github.io/">About Us</a>
     </li>
   </ul>
 </div>
@@ -65,15 +47,16 @@
 <div class="stage" id="stage">
 
 <div class="block block-inverse block-fill-height app-header"
-     style="background-image: url(assets/img/1-1.jpg);">
-
+     style="background-image: url(assets/img/index-bg.jpg);">
+     <img style="width: 120px; height: 76px;" class="img-fluid" src="assets/img/logo.png">
+      <br>
   <div class="container py-4 fixed-top app-navbar">
   <nav class="navbar navbar-transparent navbar-padded navbar-expand-md">
     <a class="navbar-brand mr-auto" href="">
-      <strong style="padding: 12px;">go</strong>
+      <strong style="padding: 12px; visibility: hidden">go</strong>
     </a>
     <button
-      class="navbar-toggler"
+      class="navbar-toggler bg-warning"
       type="button"
       data-target="#stage"
       data-toggle="stage"
@@ -84,13 +67,13 @@
     <div class="d-none d-md-block">
       <ul class="navbar-nav">
         <li class="nav-item px-1 ">
-          <a class="nav-link text-warning lead" href="index.html"><strong>Product</strong></a>
+          <a class="nav-link text-warning lead" href="index.html"><strong>Home</strong></a>
         </li>
         <li class="nav-item px-1 ">
-          <a class="nav-link lead text-dark" href="introduction.html"><strong>Introduction</strong></a>
+          <a class="nav-link lead text-dark" href="introduction.html">Getting Started</a>
         </li>
         <li class="nav-item px-1 ">
-          <a class="nav-link lead text-dark" href="https://idvxlab.github.io/"><strong>Our lab</strong></a>
+          <a class="nav-link lead text-dark" href="https://idvxlab.github.io/">About Us</a>
         </li>
       </ul>
     </div>
@@ -101,79 +84,16 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-lg-6">
-          <h1 class="block-titleData frequency text-dark">SmartVIS</h1>
-          <h5 class="mb-2 text-dark">Knowing your needs, we are more professional</h5>
+          <p class="block-titleData frequency text-dark" style="font-size: 4em;">Smart<span class="text-warning">VIS</span></p>
+          <h5 class="mb-2 text-dark">Help you create your visualization charts easily </h5>
           <p class="mb-4 text-dark">This is a visualization application based on office platform.</p>
-          <button id="intro" class="btn btn-warning btn-lg text-white">Introduction</button>
+          <button id="intro" class="btn btn-warning btn-lg text-white">Getting Started</button>
         </div>
       </div>
     </div>
   </div>
+
 </div>
-
-<!--div class="block block-secondary app-iphone-block">
-  <div class="container">
-    <div class="row app-align-center">
-
-      <div class="col-sm-5 d-none d-md-block">
-        <img class="app-iphone" src="assets/img/startup-2.jpg" style="width: 100%;">
-      </div>
-
-      <div class="col-md-6 col-sm-12 ml-auto">
-          
-          
-      </div>
-    </div>
-
-  </div>
-</div-->
-
-
-<!--div class="block block-inverse block-secondary app-code-block">
-  <div class="container">
-    <div class="row app-align-center">
-      <div class="col-md-6 order-2 order-md-1">
-        <h6 class="text-muted text-uppercase">Easy development</h6>
-        <h2>Natural language queries make mining data easy for anyone.</h2>
-        <p class="lead mb-4 text-muted">Rather than force everyone at your company to learn incredibly difficult terminal commands, we allow anyone to query the data with natural language to return data.</p>
-        <button class="btn btn-secondary btn-lg btn-borderless">
-          Read our docs
-        </button>
-      </div>
-      <div class="col-md-5 ml-auto order-1 order-md-2">
-        <pre class="app-code">
-<span>1</span> <span>goAnalytics</span> “who are the latest 3 users?”
-<span>2</span>
-<span>3</span>  {
-<span>4</span>    "Dave": {
-<span>5</span>      "fullName": "Dave Gamache",
-<span>6</span>      "twitterHandle": "@dhg",
-<span>7</span>    }
-<span>8</span>    "Mark": {
-<span>9</span>      "fullName": "Mark Otto",
-<span>10</span>      "twitterHandle": "@mdo",
-<span>11</span>    }
-<span>12</span>    "Jacob": {
-<span>13</span>      "fullName": "Jacob Thornton",
-<span>14</span>      "twitterHandle": "@fat",
-<span>15</span>    }
-<span>16</span>  }</pre>
-      </div>
-    </div>
-  </div>
-</div-->
-
-
-
-<!--div class="block app-ribbon py-5">
-  <div class="container text-xs-center">
-    <img src="assets/img/startup-4.svg">
-    <img src="assets/img/startup-5.svg">
-    <img src="assets/img/startup-6.svg">
-    <img src="assets/img/startup-7.svg">
-    <img src="assets/img/startup-8.svg">
-  </div>
-</div-->
 
 <div class="block block-secondary app-block-marketing-grid">
   <div class="container text-xs-center">
@@ -188,7 +108,7 @@
     <div class="row app-marketing-grid">
         <div class="col-md-2"></div>
         <div class="col-md-8 px-4 mb-5">
-          <img class="mb-1 img-fluid" src="assets/img/2-4.jpg">
+          <img class="mb-1 img-fluid" src="assets/img/laptop.jpg">
         </div>
     </div>
 
@@ -201,7 +121,7 @@
 
     <div class="row app-marketing-grid">
         <div class="col-md-12 px-4 mb-5">
-          <img class="mb-1 img-fluid" src="assets/img/1-3.jpg">
+          <img class="mb-1 img-fluid" src="assets/img/component.jpg">
         </div>
     </div>
 
@@ -211,140 +131,89 @@
           <small class="text-muted">Let's witness the fun of making figures in office.</small>  
           </div>
       </div>
-
+      <h2 class="text-left mb-5">Statistics Diagram</h2>
       <div class="row app-marketing-grid">
-          
-          <div class="col-md-5 px-4 mb-5">
-            <img class="mb-1 img-fluid" src="assets/img/1-4-1.jpg">
-            <p>Parallel Coordinates</p>
-          </div>
-          
-          <div class="col-md-2 px-4 mb-5">
-              <img class="mb-1 img-fluid" src="assets/img/1-4-2.jpg">
-              <p>possibilites</p>
+          <div class="col-md-3 px-4 mb-5">
+            <img class="mb-1 img-fluid" src="assets/img/piechart.png">
+            <p>Pie Graph</p>
           </div>
           
           <div class="col-md-3 px-4 mb-5">
-              <img class="mb-1 img-fluid" src="assets/img/1-4-3.jpg">
-              <p>possibilites</p>
+              <img class="mb-1 img-fluid" src="assets/img/stackedBar.png">
+              <p>Bar Chart</p>
           </div>
           
-          <div class="col-md-2 px-4 mb-5">
-              <img class="mb-1 img-fluid" src="assets/img/1-4-4.jpg">
+          <div class="col-md-3 px-4 mb-5">
+              <img class="mb-1 img-fluid" src="assets/img/linechart.png">
               <p>Line Chart</p>
           </div>
-      
-        </div>
-        </div>
-        </div>
+          
+          <div class="col-md-3 px-4 mb-5">
+            <img class="mb-1 img-fluid" src="assets/img/scatterplot.png">
+            <p>Scatterplot Chart</p>
+          </div>
+      </div>
 
-    <!--div class="row app-marketing-grid">
-      <div class="col-md-4 px-4 mb-5">
-        <img class="mb-1" src="assets/img/startup-9.svg">
-        <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+      <h2 class="text-left mb-5">Tree</h2>
+      <div class="row app-marketing-grid">
+          <div class="col-md-3 px-4 mb-5">
+            <img class="mb-1 img-fluid" src="assets/img/treemap.png">
+            <p>Treemap</p>
+          </div>
+          
+          <div class="col-md-3 px-4 mb-5">
+              <img class="mb-1 img-fluid" src="assets/img/sunburst.png">
+              <p>Sunburst</p>
+          </div>
+          
+          <div class="col-md-3 px-4 mb-5">
+              <img class="mb-1 img-fluid" src="assets/img/collapsible.png">
+              <p>Collapsible Tree</p>
+          </div>
       </div>
-      <div class="col-md-4 px-4 mb-5">
-        <img class="mb-1" src="assets/img/startup-10.svg">
-        <p><strong>E-commerce.</strong> We automatically handle all sales analytics.</p>
-      </div>
-      <div class="col-md-4 px-4 mb-5">
-        <img class="mb-1" src="assets/img/startup-11.svg">
-        <p><strong>Turnaround.</strong> Our data analysis is distributed, so it processes in seconds.</p>
-      </div>
-    </div>
 
-    <div class="row app-marketing-grid">
-      <div class="col-md-4 px-4 mb-5">
-        <img class="mb-1" src="assets/img/startup-12.svg">
-        <p><strong>Rich calculations.</strong> Limitless ways to splice and dice your data.</p>
+      <h2 class="text-left mb-5">Multidimensional Data</h2>
+      <div class="row app-marketing-grid">
+          <div class="col-md-3 px-4 mb-5">
+            <img class="mb-1 img-fluid" src="assets/img/parallelCoordinates.png">
+            <p>Parallel Coordinates</p>
+          </div>
+          
+          <div class="col-md-3 px-4 mb-5">
+              <img class="mb-1 img-fluid" src="assets/img/scatterplotMatrix.png">
+              <p>Scatter Plot Matrix</p>
+          </div>
       </div>
-      <div class="col-md-4 px-4 mb-5">
-        <img class="mb-1" src="assets/img/startup-13.svg">
-        <p><strong>Mobile apps.</strong> iOS and Android apps available for monitoring.</p>
+
+      <h2 class="text-left mb-5">Map</h2>
+      <div class="row app-marketing-grid">
+          <div class="col-md-3 px-4 mb-5">
+            <img class="mb-1 img-fluid" src="assets/img/choropleth.png">
+            <p>Choropleth Map</p>
+          </div>
+          
+          <div class="col-md-3 px-4 mb-5">
+              <img class="mb-1 img-fluid" src="assets/img/map.png">
+              <p>Map</p>
+          </div>
       </div>
-      <div class="col-md-4 px-4 mb-5">
-        <img class="mb-1" src="assets/img/startup-14.svg">
-        <p><strong>Secure connections.</strong> Every single request is routed through HTTPS.</p>
+
+      <h2 class="text-left mb-5">Graph</h2>
+      <div class="row app-marketing-grid">
+          <div class="col-md-3 px-4 mb-5">
+            <img class="mb-1 img-fluid" src="assets/img/forceDirected.png">
+            <p>Force Directed Layout</p>
+          </div>
       </div>
+    
     </div>
   </div>
-</div-->
-
-<!--div class="block app-price-plans">
-  <div class="container text-center">
-
-    <div class="row mb-5 justify-content-center">
-      <div class="col-10 col-md-8 col-lg-6">
-        <h6 class="text-muted text-uppercase mb-2">Business Talk</h6>
-        <h2>No plans. We just bump your plan whenever you need it.</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 px-4 pb-2 mb-5">
-        <div class="px-2 mb-2">
-          <h6 class="text-muted text-uppercase mb-4">Personal</h6>
-          <img class="mb-4" src="assets/img/startup-15.svg">
-          <p class="pb-2">Plenty of processing power for any personal projects, big or small.</p>
-        </div>
-
-        <ul class="list-unstyled list-bordered text-xs-left my-4">
-          <li class="py-4"><strong>10k</strong> monthly requests</li>
-          <li class="py-4"><strong>9am-5pm</strong> technical supprt</li>
-          <li class="py-4"><strong>Public</strong> API access</li>
-        </ul>
-
-        <button class="btn btn-lg btn-primary btn-block">
-          Start <span class="d-none d-xl-inline">a personal account</span>
-        </button>
-      </div>
-
-      <div class="col-md-4 px-4 pb-2 mb-5">
-        <div class="px-2">
-          <h6 class="text-muted text-uppercase mb-4">Business</h6>
-          <img class="mb-4" src="assets/img/startup-16.svg">
-          <p class="pb-2">The perfect sized plan for small businesses to get started.</p>
-        </div>
-
-        <ul class="list-unstyled list-bordered text-xs-left my-4">
-          <li class="py-4"><strong>100k</strong> monthly requests</li>
-          <li class="py-4"><strong>24/7</strong> technical supprt</li>
-          <li class="py-4"><strong>Public</strong> API access</li>
-        </ul>
-
-        <button class="btn btn-lg btn-primary btn-block">
-          Start <span class="d-none d-xl-inline">a business account</span>
-        </button>
-      </div>
-
-      <div class="col-md-4 px-4 pb-1 mb-5">
-        <div class="px-2">
-          <h6 class="text-muted text-uppercase mb-4">Corporate</h6>
-          <img class="mb-4" src="assets/img/startup-17.svg">
-          <p class="pb-2">An unlimited plan that will scale infinitely to any size project.</p>
-        </div>
-
-        <ul class="list-unstyled list-bordered text-xs-left my-4">
-          <li class="py-4"><strong>Unlimited</strong> monthly requests</li>
-          <li class="py-4"><strong>24/7</strong> technical supprt</li>
-          <li class="py-4"><strong>Public &amp; Private</strong> API access</li>
-        </ul>
-
-        <button class="btn btn-lg btn-primary btn-block">
-          Start <span class="d-none d-xl-inline">a corporate account</span>
-        </button>
-      </div>
-    </div>
-
-  </div>
-</div>
-</div-->
 
 <div class="block block-inverse app-high-praise"
-     style="background-image: url(assets/img/1-5.jpg);">
+     style="background-image: url(assets/img/business.jpg);">
     <div class="container">
-      <div class="row app-align-center py-3 justify-content-center">
-        <div class="col-sm-7 col-md-5 py-5">
+      <div class="row pb-0">
+        <div class="col-sm-7 col-md-5 py-5 pb-0">
           <p class="text-muted mb-2 lead">Put the data in the cloud.</p>
           <p class="mb-4">You can view historical data at any time and solve the data loss problem through cloud computing.</p>
         </div>
@@ -353,53 +222,38 @@
 </div>
 
 <div class="block block-inverse app-footer">
- <div class="container">
-    <div class="row">
-      <div class="col-md-3 mb-5"></div> 
-      <div class="col-md-6 mb-5">
-        <ul class="list-unstyled list-spaced">
-          <li class="mb-2"><p>From iDV<sup><small>x</small></sup></p></li>
-          <li class="text-muted">
-            <a href="https://idvxlab.github.io">https://idvxlab.github.io</a>
-          </li>
-        </ul>
-      </div>
-      <!--div class="col-md-2 ml-auto mb-5">
-        <ul class="list-unstyled list-spaced">
-          <li class="mb-2"><h6 class="text-uppercase">Product</h6></li>
-          <li class="text-muted">Features</li>
-          <li class="text-muted">Examples</li>
-          <li class="text-muted">Tour</li>
-          <li class="text-muted">Gallery</li>
-        </ul>
-      </div>
-      <div class="col-md-2 mb-5">
-        <ul class="list-unstyled list-spaced">
-          <li class="mb-2"><h6 class="text-uppercase">Apis</h6></li>
-          <li class="text-muted">Rich data</li>
-          <li class="text-muted">Simple data</li>
-          <li class="text-muted">Real time</li>
-          <li class="text-muted">Social</li>
-        </ul>
-      </div>
-      <div class="col-md-2 mb-5">
-        <ul class="list-unstyled list-spaced">
-          <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
-          <li class="text-muted">Terms</li>
-          <li class="text-muted">Legal</li>
-          <li class="text-muted">Privacy</li>
-          <li class="text-muted">License</li>
-        </ul>
-      </div>
-    </div-->
-  </div>
+  <div class="container">
+     <div class="row">
+       <div class="col-md-5 mb-5">
+         <ul class="list-unstyled list-spaced">
+           <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
+           <li class="text-muted">
+              Contact us anytime at <a href="mailto: idvx.lab@tongji.edu.cn">idvx.lab@tongji.edu.cn</a>.
+           </li>
+         </ul>
+       </div>
+       <div class="col-md-2 ml-auto mb-5">
+         <ul class="list-unstyled list-spaced">
+           <li class="mb-2"><h6 class="text-uppercase">Product</h6></li>
+           <li class="text-muted">Features</li>
+           <li class="text-muted">Examples</li>
+           <li class="text-muted">Tour</li>
+           <li class="text-muted">Gallery</li>
+         </ul>
+       </div>
+       <div class="col-md-2 mb-5">
+         <ul class="list-unstyled list-spaced">
+           <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
+           <li class="text-muted">Terms</li>
+           <li class="text-muted">Legal</li>
+           <li class="text-muted">Privacy</li>
+           <li class="text-muted">License</li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </div>
 </div>
-</div>
-</div>
-
-
-
-
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/toolkit.js"></script>
